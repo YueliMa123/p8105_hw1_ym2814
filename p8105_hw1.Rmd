@@ -48,4 +48,5 @@ nrow(penguins)
 ncol(penguins)
 mean(pull(penguins,flipper_length_mm),na.rm=TRUE)
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species))+ geom_point()
+ggsave("penguins.pdf", height = 4, width = 6)
 ```
